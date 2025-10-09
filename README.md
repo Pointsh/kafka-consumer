@@ -80,18 +80,6 @@ python auto_commit_consumer.py
 - 특정 Consumer 중단 시, 변경된 파티션만 재배정되어 안정적 처리  
 
 
----
-
-## 모니터링 구성
-
-| 구성 요소 | 설명 | 위치 |
-|------------|------|------|
-| **Kafka-UI** | Topic / Consumer Group 상태 확인 | `docker-compose/kafka02/` |
-| **Prometheus** | Kafka Exporter 지표 수집 | `docker-compose/kafka03/prometheus.yml` |
-| **Grafana** | Consumer Lag 시각화 대시보드 | `docker-compose/kafka03/docker-compose.yaml` |
-
-> Prometheus와 Grafana는 `kafka-producer` 프로젝트와 동일한 **Ansible Playbook**으로 설정 가능합니다.
-
 
 
 
