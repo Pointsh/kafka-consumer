@@ -4,7 +4,14 @@ Python 기반 **Kafka Consumer** 프로젝트로,
 [kafka-producer](https://github.com/Pointsh/kafka-producer) 리포에서 발행된 메시지를 구독하고 가공하는 역할을 담당합니다.  
 AWS **CodeDeploy**와 **GitHub Actions**를 이용해 3-Node Kafka Cluster(`kafka01~03`)에 자동 배포되며,  
 **Grafana**와 **Kafka-UI**를 통해 Consumer Lag 및 파티션 현황을 실시간으로 모니터링할 수 있습니다.
+---
+<p align="center">
+  <img src="docs/대시보드.png" width="90%">
+</p>
 
+<p align="center">
+  <img src="docs/대시보드2.png" width="90%">
+</p>
 ---
 ## 기술 스택
 

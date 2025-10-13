@@ -1,0 +1,15 @@
+---
+- name: create python env
+  hosts: kafka
+  tasks:
+    - name: Modify .bashrc
+      blockinfile:
+        path: /home/kafka/.bashrc
+        block: |
+          source /src/kafka_venv/bin/activate
+          export PYTHONPATH="${PYTHONPATH}:/src/kafka-producer:/src/kafka-consumer"
+          alias src="cd /src"
+          alias bin="cd /engine/confluent-6.2.14/bin"
+          alias logs="cd /engine/confluent-6.2.14/logs"
+        marker: "# {mark} Setting bashrc"
+      become: yes
