@@ -5,14 +5,7 @@ Python 기반 **Kafka Consumer** 프로젝트로,
 AWS **CodeDeploy**와 **GitHub Actions**를 이용해 3-Node Kafka Cluster(`kafka01~03`)에 자동 배포되며,  
 **Grafana**와 **Kafka-UI**를 통해 Consumer Lag 및 파티션 현황을 실시간으로 모니터링할 수 있습니다.
 ---
-<p align="center">
-  <img src="docs/대시보드.png" width="90%">
-</p>
 
-<p align="center">
-  <img src="docs/대시보드2.png" width="90%">
-</p>
----
 ## 기술 스택
 
 - **Language**: Python 3.10+
